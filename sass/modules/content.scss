@@ -1,0 +1,70 @@
+.home {
+    background-color: $primary-color;
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    height: calc(100% - 180px);
+    margin: 0 auto;
+    max-width: 636px;
+    padding: 4em 2em;
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+    }
+}
+
+.button {
+    @include color($secondary-color, $primary-color);
+    border: {
+        radius: 3em;
+    }
+    color: $white;
+    display: inline-block;
+    font: {
+        family: 'Pacifico';
+        size: 1.9em;
+    }
+    letter-spacing: 0.01em;
+    margin: 0;
+    padding: 0.5em 2em;
+    position: relative;
+    text-decoration: none;
+    transition: .2s all linear;
+
+    &:hover {
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-name: slide;
+        background-color: $white;
+        color: $secondary-color;
+    }
+}
+
+.social-links {
+    font-size: 3.5em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    @at-root &-item {
+        display: inline-block;
+
+        @at-root &--facebook {
+            color: $facebook;
+        }
+
+        @at-root &--linked-in {
+            color: $linkedin;
+        }
+    }
+}
+
+.about, .blog, .contact {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+}

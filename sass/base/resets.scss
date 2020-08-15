@@ -1,0 +1,12 @@
+// Set all browser resets in this file
+* {
+    box-sizing: border-box;
+}
+html, body {
+    font-size: 10px;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 192em;
+    padding: 0;
+    width: 100%;
+}

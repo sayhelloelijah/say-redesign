@@ -1,0 +1,65 @@
+.author {
+    background-color: $super-white;
+    border: 1px solid #E7E7E7 {
+        radius: 2em;
+    }
+    box-shadow: 1em .7em 1em rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2.5em;
+    padding: 2em;
+    position: relative;
+
+    &:after {
+        background-color: $primary-color;
+        border-radius: 2em;
+        content: '';
+        height: 100%;
+        left: 2em;
+        position: absolute;
+        top: 2em;
+        width: 100%;
+        z-index: -1;
+    }
+
+    @at-root &__image {
+        background: {
+            image: url('../elijah.jpg');
+            position: center center;
+            repeat: no-repeat;
+            size: 100% auto;
+        }
+        border-radius: 50%;
+        display: none;
+        flex-basis: 23%;
+
+        @media screen and (min-width: 630px) {
+            display: block;
+        }
+
+        @media screen and (min-width: 768px) {
+            flex-basis: 19%;
+        }
+    }
+
+    @at-root &__info {
+        flex-basis: 100%;
+
+        @media screen and (min-width: 630px) {
+            flex-basis: 70%;
+        }
+
+        @at-root &-name {
+            font-size: 2.2em;
+            margin: 0;
+        }
+
+        @at-root &-copy {
+            margin: .75em 0;
+        }
+    }
+
+    .social-links {
+        font-size: 20px;
+    }
+}

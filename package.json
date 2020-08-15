@@ -1,0 +1,16 @@
+{
+  "name": "sayhelloelijah",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass --watch sass/app.scss -o css"
+  },
+  "author": "sayhelloelijah",
+  "license": "Unlicensed"
+}

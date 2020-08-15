@@ -1,0 +1,33 @@
+// Set all default media styles (img, video, audio, etc)
+.about-img {
+    background: {
+        image: url('../elijah.jpg');
+        position: 50% 50%;
+        size: auto 100%;
+        repeat: no-repeat;
+    }
+    border: {
+        radius: 2em;
+    }
+    height: 40em;
+    margin: 4em auto;
+    max-width: 100%;
+    position: relative;
+    width: 40em;
+
+    &:after {
+        background-color: $secondary-color;
+        border: {
+            radius: 2em;
+        }
+        content: '';
+        display: block;
+        height: 100%;
+        left: 1em;
+        max-width: 100%;
+        position: absolute;
+        top: 1em;
+        width: 100%;
+        z-index: -1;
+    }
+}

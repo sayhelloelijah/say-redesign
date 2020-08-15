@@ -1,0 +1,31 @@
+// Footer styles
+.footer {
+    align-items: center;
+    background-color: $black;
+    color: $white;
+    display: flex;
+    font: {
+        family: 'Asap', sans-serif;
+    }
+    height: 90px;
+    padding: 0 20px;
+    position: relative;
+
+    @at-root &-text {
+        font: {
+            size: 1em;
+        }
+        margin: 0;
+
+        @media screen and (min-width: 375px) {
+            font: {
+                size: 1.4em;
+            }
+        }
+    }
+    @at-root &-links {
+        color: $white;
+        padding: 0 1em;
+        text-decoration: none;
+    }
+}

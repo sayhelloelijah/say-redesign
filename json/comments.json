@@ -1,0 +1,22 @@
+{
+    "1": {
+        "id":1,
+        "post_id":5,
+        "comment":"This was an awesome read. I'm not a developer myself but I enjoy knowing about the process. Keep it up! I will be reading more.",
+        "name":"Courtney James",
+        "email":"clashawnj08@gmail.com",
+        "approved":1,
+        "created_at":"2017-07-20 23:21:26",
+        "updated_at":"2017-07-20 23:22:34"
+    },
+    "2": {
+        "id":2,
+        "post_id":5,
+        "comment":"Hey Courtney, from us talking, this still applies to you. You're a creative freelancer that specializes in custom made decor. I know you're just in the starting phases, but be on  the look out. You'll also need to know when to walk away from certain projects.",
+        "name":"Elijah",
+        "email":"say@helloelijah.com",
+        "approved":1,
+        "created_at":"2017-07-21 19:49:37",
+        "updated_at":"2017-07-21 19:49:37"
+    }
+}

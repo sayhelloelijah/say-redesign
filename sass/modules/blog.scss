@@ -1,0 +1,147 @@
+.blog {
+    min-width: 37.5em;
+
+    @at-root &__post {
+        background-color: $super-white;
+        border: 1px solid #e7e7e7 {
+            radius: 2em;
+        }
+        box-shadow: 1em .7em 1em rgba(0, 0, 0, 0.1);
+        flex-direction: column;
+        margin-bottom: 7em;
+        padding: 7em 7em 7em 3em;
+        position: relative;
+
+        &:after {
+            background-color: darken($white, 30%);
+            border-radius: 2em;
+            content: '';
+            height: 100%;
+            left: 1.7em;
+            position: absolute;
+            top: 1.7em;
+            width: 100%;
+            z-index: -1;
+        }
+
+        &:nth-child(even) {
+            box-shadow: -1em 0.7em 1em rgba(0, 0, 0, 0.1);
+
+            &:after {
+                left: -1.7em;
+            }
+        }
+
+        @at-root &-button {
+            background-color: darken($white, 30%); 
+            border-radius: 2em;
+            color: $black;
+            font: {
+                family: 'Asap', sans-serif;
+                size: 1.6em;
+                weight: 700;
+            }
+            padding: .7em 1.5em;
+            text-decoration: none;
+        }
+
+        @at-root &-category {
+            font: {
+                family: 'Asap', sans-serif;
+                size: 1.6em;
+            }
+            position: absolute;
+            top: 2em;
+            right: 2em;
+        }
+
+        @at-root &-copy {
+            font-size: 1.6em;
+            line-height: 1.8em;
+            margin-bottom: 2em;
+        }
+
+        @at-root &-title {
+            font-size: 2.6em;
+            line-height: 1.4em;
+            margin: 0;
+        }
+
+        @at-root &--blue {
+            &:after {
+                background-color: $tertiary-color;
+            }
+
+            .blog__post-button {
+                background-color: $tertiary-color;
+                color: $super-white;
+            }
+
+            .blog__post-category {
+                color: $tertiary-color;
+            }
+        }
+
+        @at-root &--javascript {
+            &:after {
+                background-color: $primary-color;
+            }
+
+            .blog__post-button {
+                background-color: $primary-color;
+            }
+
+            .blog__post-category {
+                color: $primary-color;
+            }
+        }
+
+        @at-root &--mag {
+            &:after {
+                background-color: $secondary-color;
+            }
+
+            .blog__post-button {
+                background-color: $secondary-color;
+                color: $super-white;
+            }
+
+            .blog__post-category {
+                color: $secondary-color;
+            }
+        }
+    }
+
+    @at-root &-single {
+        .blog {
+
+            &__post {
+                border: none;
+                box-shadow: none;
+                margin-bottom: 2.5em;
+                padding: 0;
+
+                &:after {
+                    display: none;
+                }
+
+                &-category {
+                    position: static;
+                }
+
+                &-date {
+                    font: {
+                        family: 'Asap', sans-serif;
+                        size: 1.6em;
+                    }
+                }
+
+                &-meta {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 2em;
+                }
+            }
+        }
+    }
+}
